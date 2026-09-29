@@ -357,13 +357,13 @@
   <main>
     <div class="controls-bar">
       <div class="slide-counter">
-        Viewing <span>10 Slides</span> • Audio explanations running for each slide
+        Viewing <span>10 Slides</span> • Audio explanations running for topic slides
       </div>
     </div>
 
     <div class="slides-container">
       
-      <!-- Slide 1 -->
+      <!-- Slide 1: Title -->
       <div class="slide-card" id="slide-1">
         <div class="slide-img-wrapper">
           <img src="slides/slide1.png" alt="Slide 1 - Title & Team" class="slide-img">
@@ -383,27 +383,18 @@
         </div>
       </div>
 
-      <!-- Slide 2 -->
+      <!-- Slide 2: Contents (NO AUDIO) -->
       <div class="slide-card" id="slide-2">
         <div class="slide-img-wrapper">
-          <img src="slides/slide2.png" alt="Slide 2 - Contents & Intro" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(2, '2.ogg')">
-            <div class="play-icon"></div>
-            <div class="audio-wave">
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-            </div>
-            <span class="btn-text">Click to hear team explain</span>
-          </button>
+          <img src="slides/slide2.png" alt="Slide 2 - Contents" class="slide-img">
         </div>
       </div>
 
-      <!-- Slide 3 -->
+      <!-- Slide 3: Problem (Audio 2: 2.ogg) -->
       <div class="slide-card" id="slide-3">
         <div class="slide-img-wrapper">
           <img src="slides/slide3.png" alt="Slide 3 - Problem Statement" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(3, '3.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(3, '2.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -415,11 +406,11 @@
         </div>
       </div>
 
-      <!-- Slide 4 -->
+      <!-- Slide 4: Existing Solution (Audio 3: 3.ogg) -->
       <div class="slide-card" id="slide-4">
         <div class="slide-img-wrapper">
           <img src="slides/slide4.png" alt="Slide 4 - Existing Solution" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(4, '4.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(4, '3.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -431,11 +422,11 @@
         </div>
       </div>
 
-      <!-- Slide 5 -->
+      <!-- Slide 5: Innovation & Uniqueness (Audio 4: 4.ogg) -->
       <div class="slide-card" id="slide-5">
         <div class="slide-img-wrapper">
           <img src="slides/slide5.png" alt="Slide 5 - Innovation & Uniqueness" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(5, '5.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(5, '4.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -447,11 +438,11 @@
         </div>
       </div>
 
-      <!-- Slide 6 -->
+      <!-- Slide 6: Technology Stack (Audio 5: 5.ogg) -->
       <div class="slide-card" id="slide-6">
         <div class="slide-img-wrapper">
           <img src="slides/slide6.png" alt="Slide 6 - Technology Stack" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(6, '6.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(6, '5.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -463,11 +454,11 @@
         </div>
       </div>
 
-      <!-- Slide 7 -->
+      <!-- Slide 7: System Architecture (Audio 6: 6.ogg) -->
       <div class="slide-card" id="slide-7">
         <div class="slide-img-wrapper">
           <img src="slides/slide7.png" alt="Slide 7 - System Architecture" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(7, '7.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(7, '6.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -479,11 +470,11 @@
         </div>
       </div>
 
-      <!-- Slide 8 -->
+      <!-- Slide 8: Feasibility (Audio 7: 7.ogg) -->
       <div class="slide-card" id="slide-8">
         <div class="slide-img-wrapper">
           <img src="slides/slide8.png" alt="Slide 8 - Feasibility" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(8, '8.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(8, '7.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -495,11 +486,11 @@
         </div>
       </div>
 
-      <!-- Slide 9 -->
+      <!-- Slide 9: Conclusion (Audio 8: 8.ogg) -->
       <div class="slide-card" id="slide-9">
         <div class="slide-img-wrapper">
           <img src="slides/slide9.png" alt="Slide 9 - Conclusion" class="slide-img">
-          <button class="audio-overlay-btn" onclick="toggleAudio(9, '9.ogg')">
+          <button class="audio-overlay-btn" onclick="toggleAudio(9, '8.ogg')">
             <div class="play-icon"></div>
             <div class="audio-wave">
               <div class="wave-bar"></div>
@@ -511,10 +502,19 @@
         </div>
       </div>
 
-      <!-- Slide 10 -->
+      <!-- Slide 10: Thank You (Audio 9: 9.ogg) -->
       <div class="slide-card" id="slide-10">
         <div class="slide-img-wrapper">
           <img src="slides/slide10.png" alt="Slide 10 - Thank You" class="slide-img">
+          <button class="audio-overlay-btn" onclick="toggleAudio(10, '9.ogg')">
+            <div class="play-icon"></div>
+            <div class="audio-wave">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+            <span class="btn-text">Click to hear team explain</span>
+          </button>
           <div class="app-banner-overlay">
             <span>🌐 Live App:</span>
             <a href="https://app-hazel-eight-24.vercel.app" target="_blank" class="app-banner-link">https://app-hazel-eight-24.vercel.app</a>
@@ -534,8 +534,15 @@
     let currentSlideId = null;
 
     const audioMap = {
-      1: '1.1.ogg', 2: '2.ogg', 3: '3.ogg', 4: '4.ogg', 5: '5.ogg',
-      6: '6.ogg', 7: '7.ogg', 8: '8.ogg', 9: '9.ogg'
+      1: '1.1.ogg',
+      3: '2.ogg',
+      4: '3.ogg',
+      5: '4.ogg',
+      6: '5.ogg',
+      7: '6.ogg',
+      8: '7.ogg',
+      9: '8.ogg',
+      10: '9.ogg'
     };
 
     function toggleAudio(slideNum, audioSrc) {
@@ -596,7 +603,7 @@
       const hash = window.location.hash;
       if (hash && hash.startsWith('#slide-')) {
         const slideNum = parseInt(hash.replace('#slide-', ''));
-        if (slideNum >= 1 && slideNum <= 9) {
+        if (audioMap[slideNum]) {
           const card = document.getElementById(`slide-${slideNum}`);
           if (card) {
             card.scrollIntoView({ behavior: 'smooth', block: 'center' });
