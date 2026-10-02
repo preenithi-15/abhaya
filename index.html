@@ -36,6 +36,28 @@
       line-height: 1.5;
     }
 
+    /* Hackathon banner */
+    .hackathon-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .hackathon-logo {
+      height: 32px;
+      width: auto;
+    }
+    .hackathon-track {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1e293b;
+      text-align: center;
+    }
+
     /* Header */
     header {
       background-color: rgba(30, 41, 59, 0.95);
@@ -346,6 +368,11 @@
 </head>
 <body>
 
+  <div class="hackathon-banner">
+    <img src="assets/ieee-wie-ils-logo.png" alt="IEEE WIE International Leadership Summit 2026" class="hackathon-logo">
+    <span class="hackathon-track">Track 3: SheLeads (WIE Special Track) • IEEE WIE ILS 2026 National Hackathon</span>
+  </div>
+
   <header>
     <div class="brand">
       <div class="brand-logo">A</div>
@@ -555,6 +582,8 @@
   </main>
 
   <footer>
+    <img src="assets/ieee-wie-ils-logo.png" alt="IEEE WIE International Leadership Summit 2026" style="height:28px;width:auto;display:block;margin:0 auto 0.5rem;">
+    <p>Submitted for Track 3: SheLeads (WIE Special Track) — IEEE WIE ILS 2026 National Hackathon</p>
     <p>© 2026 ABHAYA by Team Hackbros • Hosted on GitHub Pages: <a href="https://github.com/dharaniruk/abhaya" target="_blank">github.com/dharaniruk/abhaya</a></p>
   </footer>
 
