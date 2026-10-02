@@ -46,6 +46,9 @@
       padding: 0.75rem 1.5rem;
       flex-wrap: wrap;
       border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 101;
     }
     .hackathon-logo {
       height: 64px;
@@ -62,6 +65,26 @@
       .hackathon-track { font-size: 0.8rem; }
     }
 
+    /* Persistent side branding badges, stay put while the page scrolls */
+    .side-badge {
+      position: fixed;
+      z-index: 90;
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 0.5rem 0.7rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      display: flex;
+      align-items: center;
+      opacity: 0.95;
+    }
+    .side-badge img { height: 34px; width: auto; display: block; }
+    .side-badge.left { left: 14px; bottom: 14px; }
+    .side-badge.right { right: 14px; bottom: 14px; }
+    @media (max-width: 900px) {
+      .side-badge { display: none; }
+    }
+
     /* Header */
     header {
       background-color: rgba(30, 41, 59, 0.95);
@@ -69,7 +92,7 @@
       border-bottom: 1px solid var(--border-color);
       padding: 0.85rem 1.5rem;
       position: sticky;
-      top: 0;
+      top: 88px;
       z-index: 100;
       display: flex;
       justify-content: space-between;
@@ -371,6 +394,13 @@
   </style>
 </head>
 <body>
+
+  <div class="side-badge left">
+    <img src="assets/ieee-wie-ils-logo.png" alt="IEEE WIE ILS 2026">
+  </div>
+  <div class="side-badge right">
+    <img src="assets/ieee-wie-ils-logo.png" alt="IEEE WIE ILS 2026">
+  </div>
 
   <div class="hackathon-banner">
     <img src="assets/ieee-wie-ils-logo.png" alt="IEEE WIE International Leadership Summit 2026" class="hackathon-logo">
